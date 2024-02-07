@@ -18,5 +18,30 @@
         Something wrong with my age.
         {% endif %}
     </div>
+
+    <div>
+        
+        
+        {% if student %}
+            {% comment "looping over a list" %}
+            {% endcomment %}
+            <h2> I am a student. my subjects are </h2> 
+                {% for subject in subjects %}
+                <ul > {{ subject }} </ul>
+                {% endfor %}
+
+            {% comment "looping over a dictionary" %}
+            {% endcomment %}
+
+            <h2>My subject wise marks are  </h2>
+                {% for subject, marks in marks.items %}
+                <ul > {{ subject }} : {{ marks }} </ul>
+                {% endfor %}
+            
+        {% else %}
+            I am not a student.
+        {% endif %}
+        
+    </div>
   </body>
 </html>
