@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def index(request):
     context = {
-        'title': 'Home',
-        'content': 'Welcome to the homepage.'
+        'name': 'Shamim Hossen Razu',
+        'age': 28,
     }
     return render(request, 'index.html', context)

@@ -6,18 +6,6 @@
   <body>
     <h1>Template App</h1>
     <p>Welcome to the template app!</p>
-    <div>
-        <div id="content">
-            {% block content %}
-            <p>This is the default content.</p>
-            {{title}}
-            {{content | safe  }}
-            {% endblock %}
-          </div>
-        <div>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-        </div>  
-    </div>
-    
+    My name is {{ name }} and I am {{ age }} years old.
   </body>
+</html>
