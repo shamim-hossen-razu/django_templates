@@ -7,5 +7,16 @@
     <h1>Template App</h1>
     <p>Welcome to the template app!</p>
     My name is {{ name }} and I am {{ age }} years old.
+    <div>
+        {% if age < 12 %}
+        I am a baby.
+        {% elif age > 12 and age < 18 %}
+        i am a teenager.
+        {% elif age > 18 %}
+        I am an adult.
+        {% else %}
+        Something wrong with my age.
+        {% endif %}
+    </div>
   </body>
 </html>
